@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNest | Your Reading Companion</title>
+
+  <!-- Bootstrap & Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background-color: #f6f4ef;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      transition: transform 0.3s;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #3b2f2f;
+      margin-top: 20px;
+    }
+
+    .hero p {
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .btn-main {
+      background-color: #c47b32;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 25px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn-main:hover {
+      background-color: #a96425;
+    }
+
+    /* FEATURES SECTION */
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .feature-card {
+      background: #f1ece6;
+      border-radius: 12px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .feature-card i {
+      font-size: 30px;
+      color: #c47b32;
+      margin-bottom: 10px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      background-color: #f7f4ef;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #3b2f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #c47b32;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="fade-up">
+    <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book Icon">
+    <h1>Welcome to BookNest</h1>
+    <p>Discover, read, and share your favorite books — all in one place.</p>
+    <a href="#" class="btn btn-main">Explore Now</a>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2 class="mb-5" data-aos="fade-up">Why Choose BookNest?</h2>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-4" data-aos="zoom-in">
+          <div class="feature-card">
+            <i class="fa-solid fa-book-open"></i>
+            <h5>Vast Library</h5>
+            <p>Thousands of books across every genre.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="feature-card">
+            <i class="fa-solid fa-user-check"></i>
+            <h5>Personalized Picks</h5>
+            <p>Smart recommendations just for you.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="feature-card">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h5>Read Anywhere</h5>
+            <p>Access your books on any device.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="feature-card">
+            <i class="fa-solid fa-star"></i>
+            <h5>Trusted Reviews</h5>
+            <p>See what other readers love most.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2 class="mb-5" data-aos="fade-up">What Our Readers Say</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-right">
+          <div class="testimonial-card">
+            <p>“BookNest helped me find my next favorite read! So easy to use.”</p>
+            <h6>- Ananya</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="testimonial-card">
+            <p>“Love how neatly everything is organized. Highly recommend!”</p>
+            <h6>- Rahul</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-left">
+          <div class="testimonial-card">
+            <p>“A wonderful platform for book lovers like me. Great experience!”</p>
+            <h6>- Priya</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 BookNest | Designed by Sirichandana</p>
+    <p>
+      <a href="#">About</a> |
+      <a href="#">Contact</a> |
+      <a href="#">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <!-- JS Links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
